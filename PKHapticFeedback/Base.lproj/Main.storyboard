@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Llx-JY-nGD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPHapticFeedback" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySL-5R-Lco">
+                                <rect key="frame" x="91" y="273.5" width="193" height="30"/>
+                                <state key="normal" title="Heavy Impact Haptic Button"/>
+                                <connections>
+                                    <action selector="heavyHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feO-b0-Mvm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4b-2D-QSR">
+                                <rect key="frame" x="110" y="193.5" width="156" height="30"/>
+                                <state key="normal" title="Success Haptic Button"/>
+                                <connections>
+                                    <action selector="successHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YqW-4p-Poa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRv-sv-vVq">
+                                <rect key="frame" x="122" y="155.5" width="132" height="30"/>
+                                <state key="normal" title="Error Haptic Button"/>
+                                <connections>
+                                    <action selector="errorHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9D-xD-LBW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVZ-BT-ix4">
+                                <rect key="frame" x="110" y="117.5" width="155" height="30"/>
+                                <state key="normal" title="Warning Haptic Button"/>
+                                <connections>
+                                    <action selector="warningHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3B0-XR-gc9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJl-aX-6fa">
+                                <rect key="frame" x="85" y="311.5" width="205" height="30"/>
+                                <state key="normal" title="Medium Impact Haptic Button"/>
+                                <connections>
+                                    <action selector="mediumHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BR5-AG-sok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYA-WB-PiD">
+                                <rect key="frame" x="96" y="349.5" width="184" height="30"/>
+                                <state key="normal" title="Light Impact Haptic Button"/>
+                                <connections>
+                                    <action selector="lightHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jkb-9C-BoN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuR-es-b6G">
+                                <rect key="frame" x="107" y="429.5" width="162" height="30"/>
+                                <state key="normal" title="Selection Haptic Button"/>
+                                <connections>
+                                    <action selector="lightHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8H-nr-0MB"/>
+                                    <action selector="selectionHapticButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lka-cN-Zau"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kku-Vg-i12">
+                                <rect key="frame" x="139" y="506" width="97" height="29"/>
+                                <segments>
+                                    <segment title="Imp 1"/>
+                                    <segment title="Imp 2"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUB-RG-sU3">
+                                <rect key="frame" x="127" y="573" width="122" height="30"/>
+                                <state key="normal" title="Performance Test"/>
+                                <connections>
+                                    <action selector="performanceTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a64-1Z-keX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhg-da-f6X">
+                                <rect key="frame" x="148" y="57.5" width="80" height="30"/>
+                                <state key="normal" title="Objective C"/>
+                                <connections>
+                                    <action selector="objCControllerPushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfY-Vj-WtS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZYA-WB-PiD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2c5-Xr-tLX"/>
+                            <constraint firstItem="iVZ-BT-ix4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Pd-Ub-NnY"/>
+                            <constraint firstItem="ySL-5R-Lco" firstAttribute="top" secondItem="Z4b-2D-QSR" secondAttribute="bottom" constant="50" id="4dC-LG-q2G"/>
+                            <constraint firstItem="ySL-5R-Lco" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-45" id="5Po-k0-6tr"/>
+                            <constraint firstItem="pRv-sv-vVq" firstAttribute="top" secondItem="iVZ-BT-ix4" secondAttribute="bottom" constant="8" id="FWV-Ve-BPK"/>
+                            <constraint firstItem="Z4b-2D-QSR" firstAttribute="top" secondItem="pRv-sv-vVq" secondAttribute="bottom" constant="8" id="JFA-A0-AwS"/>
+                            <constraint firstItem="Kku-Vg-i12" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeU-0B-LuN"/>
+                            <constraint firstItem="IuR-es-b6G" firstAttribute="top" secondItem="ZYA-WB-PiD" secondAttribute="bottom" constant="50" id="VS6-ai-sp9"/>
+                            <constraint firstItem="rhg-da-f6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3g-VL-oYP"/>
+                            <constraint firstItem="sJl-aX-6fa" firstAttribute="top" secondItem="ySL-5R-Lco" secondAttribute="bottom" constant="8" id="b54-M6-JMx"/>
+                            <constraint firstItem="sUB-RG-sU3" firstAttribute="top" secondItem="Kku-Vg-i12" secondAttribute="bottom" constant="39" id="bfs-s5-uKu"/>
+                            <constraint firstItem="ySL-5R-Lco" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4z-hZ-TKd"/>
+                            <constraint firstItem="Kku-Vg-i12" firstAttribute="top" secondItem="IuR-es-b6G" secondAttribute="bottom" constant="46.5" id="iHd-rM-eyI"/>
+                            <constraint firstItem="ZYA-WB-PiD" firstAttribute="top" secondItem="sJl-aX-6fa" secondAttribute="bottom" constant="8" id="imq-44-gAi"/>
+                            <constraint firstItem="iVZ-BT-ix4" firstAttribute="top" secondItem="rhg-da-f6X" secondAttribute="bottom" constant="30" id="j2J-yG-K8A"/>
+                            <constraint firstItem="sUB-RG-sU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mi4-ba-MVK"/>
+                            <constraint firstItem="Z4b-2D-QSR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mxe-Bb-cEB"/>
+                            <constraint firstItem="sJl-aX-6fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uuv-fW-KvW"/>
+                            <constraint firstItem="IuR-es-b6G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xz6-QE-kjV"/>
+                            <constraint firstItem="pRv-sv-vVq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zKh-Ce-Vf3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BhU-Td-Pqp"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="Kku-Vg-i12" id="4R4-ss-HiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="38.23088455772114"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="4as-Nh-CDB">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="suj-Y1-hNo" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="58D-ln-qbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="HsK-Jm-y2S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2W-CA-hH6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1t-zU-2ha">
+                                <rect key="frame" x="122" y="162.5" width="132" height="30"/>
+                                <state key="normal" title="Error Haptic Button"/>
+                                <connections>
+                                    <action selector="errorHapticButtonPressed:" destination="suj-Y1-hNo" eventType="touchUpInside" id="mCu-8C-95d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW2-5b-1Sb">
+                                <rect key="frame" x="107" y="436.5" width="162" height="30"/>
+                                <state key="normal" title="Selection Haptic Button"/>
+                                <connections>
+                                    <action selector="selectionHapticButtonPressed:" destination="suj-Y1-hNo" eventType="touchUpInside" id="Dkt-1Y-aVn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDt-3U-jex">
+                                <rect key="frame" x="110" y="200.5" width="156" height="30"/>
+                                <state key="normal" title="Success Haptic Button"/>
+                                <connections>
+                                    <action selector="successHapticButtonPressed:" destination="suj-Y1-hNo" eventType="touchUpInside" id="7CC-ln-gxE"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7Ii-J8-8iG">
+                                <rect key="frame" x="139" y="513.5" width="97" height="29"/>
+                                <segments>
+                                    <segment title="Imp 1"/>
+                                    <segment title="Imp 2"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiK-YX-Oou">
+                                <rect key="frame" x="110" y="124.5" width="155" height="30"/>
+                                <state key="normal" title="Warning Haptic Button"/>
+                                <connections>
+                                    <action selector="warningHapticButtonPressed:" destination="suj-Y1-hNo" eventType="touchUpInside" id="HzV-b8-9AU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWY-0P-Hgr">
+                                <rect key="frame" x="91" y="280.5" width="193" height="30"/>
+                                <state key="normal" title="Heavy Impact Haptic Button"/>
+                                <connections>
+                                    <action selector="heavyHapticButtonPressed:" destination="suj-Y1-hNo" eventType="touchUpInside" id="Z1h-6d-a56"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVg-JZ-xNw">
+                                <rect key="frame" x="127" y="580.5" width="122" height="30"/>
+                                <state key="normal" title="Performance Test"/>
+                                <connections>
+                                    <action selector="performanceTest:" destination="suj-Y1-hNo" eventType="touchUpInside" id="naF-YO-pBf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAc-5h-MTz">
+                                <rect key="frame" x="96" y="356.5" width="184" height="30"/>
+                                <state key="normal" title="Light Impact Haptic Button"/>
+                                <connections>
+                                    <action selector="lightHapticButtonPressed:" destination="suj-Y1-hNo" eventType="touchUpInside" id="urw-sB-xj6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvJ-Zc-Ime">
+                                <rect key="frame" x="85" y="318.5" width="205" height="30"/>
+                                <state key="normal" title="Medium Impact Haptic Button"/>
+                                <connections>
+                                    <action selector="mediumHapticButtonPressed:" destination="suj-Y1-hNo" eventType="touchUpInside" id="Mx9-q0-6b6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VWY-0P-Hgr" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="3lN-4c-zv9"/>
+                            <constraint firstItem="aW2-5b-1Sb" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="5pn-ui-jix"/>
+                            <constraint firstItem="jvJ-Zc-Ime" firstAttribute="top" secondItem="VWY-0P-Hgr" secondAttribute="bottom" constant="8" id="8bb-NN-6NH"/>
+                            <constraint firstItem="7Ii-J8-8iG" firstAttribute="top" secondItem="aW2-5b-1Sb" secondAttribute="bottom" constant="46.5" id="9Ys-NY-9Fp"/>
+                            <constraint firstItem="VWY-0P-Hgr" firstAttribute="top" secondItem="PDt-3U-jex" secondAttribute="bottom" constant="50" id="AFf-ck-xbb"/>
+                            <constraint firstItem="wiK-YX-Oou" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="Abm-9n-TTo"/>
+                            <constraint firstItem="jvJ-Zc-Ime" firstAttribute="centerY" secondItem="N2W-CA-hH6" secondAttribute="centerY" id="GMd-bX-81p"/>
+                            <constraint firstItem="jvJ-Zc-Ime" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="MrO-yw-OGS"/>
+                            <constraint firstItem="M1t-zU-2ha" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="PZS-WT-X90"/>
+                            <constraint firstItem="QVg-JZ-xNw" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="PcX-V7-TsK"/>
+                            <constraint firstItem="7Ii-J8-8iG" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="PxQ-XC-chN"/>
+                            <constraint firstItem="MAc-5h-MTz" firstAttribute="top" secondItem="jvJ-Zc-Ime" secondAttribute="bottom" constant="8" id="Q3p-Nv-nfB"/>
+                            <constraint firstItem="PDt-3U-jex" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="fK3-Ls-HfF"/>
+                            <constraint firstItem="QVg-JZ-xNw" firstAttribute="top" secondItem="7Ii-J8-8iG" secondAttribute="bottom" constant="39" id="mZ4-CY-4Yc"/>
+                            <constraint firstItem="MAc-5h-MTz" firstAttribute="centerX" secondItem="N2W-CA-hH6" secondAttribute="centerX" id="ryn-mG-Pqk"/>
+                            <constraint firstItem="aW2-5b-1Sb" firstAttribute="top" secondItem="MAc-5h-MTz" secondAttribute="bottom" constant="50" id="tSG-np-ULu"/>
+                            <constraint firstItem="M1t-zU-2ha" firstAttribute="top" secondItem="wiK-YX-Oou" secondAttribute="bottom" constant="8" id="v2c-Pe-LtB"/>
+                            <constraint firstItem="PDt-3U-jex" firstAttribute="top" secondItem="M1t-zU-2ha" secondAttribute="bottom" constant="8" id="zlj-67-icH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="7Ii-J8-8iG" id="yqx-J0-rxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVK-aI-bMK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="37.331334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zzF-8O-1Vz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Llx-JY-nGD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0HO-jW-SmL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ifP-gF-2vU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zg-i0-9OB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66.400000000000006" y="-644.52773613193403"/>
+        </scene>
+    </scenes>
+</document>
