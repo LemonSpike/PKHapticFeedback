@@ -1,6 +1,6 @@
 //
-//  RPHapticFeedbackUITests.swift
-//  RPHapticFeedbackUITests
+//  PKHapticFeedbackUITests.swift
+//  PKHapticFeedbackUITests
 //
 //  Created by Pranav Kasetti on 10/07/2017.
 //  Copyright © 2017 Pranav Kasetti. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class RPHapticFeedbackUITests: XCTestCase {
+class PKHapticFeedbackUITests: XCTestCase {
   
   override func setUp() {
   super.setUp()

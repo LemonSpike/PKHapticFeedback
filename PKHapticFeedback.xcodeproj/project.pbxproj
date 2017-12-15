@@ -22,7 +22,7 @@
 		D4F4B7B71F1394CB00831BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F4B7B61F1394CB00831BDE /* Assets.xcassets */; };
 		D4F4B7BA1F1394CB00831BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F4B7B81F1394CB00831BDE /* LaunchScreen.storyboard */; };
 		D4F4B7C51F1394CB00831BDE /* HapticCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B7C41F1394CB00831BDE /* HapticCacheTests.swift */; };
-		D4F4B7D01F1394CB00831BDE /* RPHapticFeedbackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B7CF1F1394CB00831BDE /* RPHapticFeedbackUITests.swift */; };
+		D4F4B7D01F1394CB00831BDE /* PKHapticFeedbackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B7CF1F1394CB00831BDE /* PKHapticFeedbackUITests.swift */; };
 		D4F4B7E11F14DC1700831BDE /* HapticType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B7E01F14DC1700831BDE /* HapticType.swift */; };
 		D4F4B7E41F152BE700831BDE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F4B7E31F152BE700831BDE /* SecondViewController.m */; };
 /* End PBXBuildFile section */
@@ -65,7 +65,7 @@
 		D4F4B7C41F1394CB00831BDE /* HapticCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticCacheTests.swift; sourceTree = "<group>"; };
 		D4F4B7C61F1394CB00831BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F4B7CB1F1394CB00831BDE /* PKHapticFeedbackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PKHapticFeedbackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4F4B7CF1F1394CB00831BDE /* RPHapticFeedbackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPHapticFeedbackUITests.swift; sourceTree = "<group>"; };
+		D4F4B7CF1F1394CB00831BDE /* PKHapticFeedbackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHapticFeedbackUITests.swift; sourceTree = "<group>"; };
 		D4F4B7D11F1394CB00831BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F4B7E01F14DC1700831BDE /* HapticType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticType.swift; sourceTree = "<group>"; };
 		D4F4B7E21F152BE700831BDE /* PKHapticFeedback-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PKHapticFeedback-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				D4F4B7AE1F1394CA00831BDE /* PKHapticFeedback */,
-				D4F4B7C31F1394CB00831BDE /* RPHapticFeedbackTests */,
-				D4F4B7CE1F1394CB00831BDE /* RPHapticFeedbackUITests */,
+				D4F4B7C31F1394CB00831BDE /* PKHapticFeedbackTests */,
+				D4F4B7CE1F1394CB00831BDE /* PKHapticFeedbackUITests */,
 				D4F4B7AD1F1394CA00831BDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 			path = PKHapticFeedback;
 			sourceTree = "<group>";
 		};
-		D4F4B7C31F1394CB00831BDE /* RPHapticFeedbackTests */ = {
+		D4F4B7C31F1394CB00831BDE /* PKHapticFeedbackTests */ = {
 			isa = PBXGroup;
 			children = (
 				D4F4B7C41F1394CB00831BDE /* HapticCacheTests.swift */,
@@ -158,17 +158,15 @@
 				D4BCA01A1F2773CE00260D3D /* MockHapticTuple.swift */,
 				D4F4B7C61F1394CB00831BDE /* Info.plist */,
 			);
-			name = RPHapticFeedbackTests;
 			path = PKHapticFeedbackTests;
 			sourceTree = "<group>";
 		};
-		D4F4B7CE1F1394CB00831BDE /* RPHapticFeedbackUITests */ = {
+		D4F4B7CE1F1394CB00831BDE /* PKHapticFeedbackUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D4F4B7CF1F1394CB00831BDE /* RPHapticFeedbackUITests.swift */,
+				D4F4B7CF1F1394CB00831BDE /* PKHapticFeedbackUITests.swift */,
 				D4F4B7D11F1394CB00831BDE /* Info.plist */,
 			);
-			name = RPHapticFeedbackUITests;
 			path = PKHapticFeedbackUITests;
 			sourceTree = "<group>";
 		};
@@ -336,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F4B7D01F1394CB00831BDE /* RPHapticFeedbackUITests.swift in Sources */,
+				D4F4B7D01F1394CB00831BDE /* PKHapticFeedbackUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

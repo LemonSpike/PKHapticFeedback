@@ -1,6 +1,6 @@
 //
 //  HapticTypeTests.swift
-//  RPHapticFeedback
+//  PKHapticFeedback
 //
 //  Created by Pranav Kasetti on 20/07/2017.
 //  Copyright © 2017 Pranav Kasetti. All rights reserved.
@@ -12,8 +12,7 @@ import UIKit
 
 class HapticTypeTests: XCTestCase {
   
-  let hapticTypes: [HapticType] = [HapticType.notification(.error), HapticType.notification(.warning), HapticType.notification(.success),
-                                   HapticType.impact(.heavy), HapticType.impact(.medium), HapticType.impact(.light), HapticType.selection]
+  let hapticTypes: [HapticType] = [HapticType.notification(.error), HapticType.notification(.warning), HapticType.notification(.success), HapticType.impact(.heavy), HapticType.impact(.medium), HapticType.impact(.light), HapticType.selection]
   
   override func setUp() {
     super.setUp()

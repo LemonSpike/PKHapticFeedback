@@ -1,6 +1,6 @@
 //
-//  RPHapticFeedbackTests.swift
-//  RPHapticFeedbackTests
+//  PKHapticFeedbackTests.swift
+//  PKHapticFeedbackTests
 //
 //  Created by Pranav Kasetti on 10/07/2017.
 //  Copyright © 2017 Pranav Kasetti. All rights reserved.
