@@ -46,6 +46,7 @@ self.haptic.generateFeedback(hapticType: HapticType.impact(.medium))
 self.haptic.generateFeedback(hapticType: HapticType.impact(.light))
 self.haptic.generateFeedback(hapticType: HapticType.notification(.warning))
 self.haptic.generateFeedback(hapticType: HapticType.notification(.error))
+self.haptic.generateFeedback(hapticType: HapticType.notification(.selection))
 self.haptic.generateFeedback(hapticType: HapticType.selection)
 ```
 
