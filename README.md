@@ -19,7 +19,7 @@ Then import the framework as follows, for Objective-C Projects:
 Or as follows for Swift projects:
 
 ```
-#import "PKHapticFeedback"
+import "PKHapticFeedback"
 ```
 
 ## Guide
@@ -69,7 +69,13 @@ Example usage:
 self.haptic.prepareFeedbackGenerator(forHapticType: HapticType.impact(.light))
 ```
 
-Unit tests have been included which make use of dependency injection, stubbing, and mocks.
+In Objective-C:
+
+```
+[self.haptic prepareForFeedbackWithType:CompatibleHapticTypeSelection];
+```
+
+Unit tests have been included which make use of dependency injection, stubbing, and mocks. These testing functions test if feedback generation takes place the expected number of times in the case of multiple calls, whether the captured haptic type is correct, and also if preparation and generation of feedback occurs in the main thread.
 
 ## License
 
